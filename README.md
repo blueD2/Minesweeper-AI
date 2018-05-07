@@ -8,7 +8,7 @@ We used a population size of 100 and ran the algorithm for 100 generations, with
 
 ## Results
 Our minesweeper AI definitely improved, especially near the beginning, and even won the game a couple of times, but we weren't able to produce this result consistently. This is probably due to the fact that minesweeper is a game highly based on luck, and one wrong move may result in instant death. Further improvements might be made in using the one-hot representation for our inputs instead of assigning our own values to bombs, walls, and flags, but that would have increased our number of inputs tenfold. We tried a couple different ways to calculate the score, combining correct flags, incorrect flags, and clear space, but there might have been a more optimal way to calculate it. In addition, we had no mechanism to unflag cells once they were flagged (so the ANN wouldn't get stuck in an infinite loop of flagging and unflagging); instead, we just capped the number of flags at 10, which might have been a weakness of our implementation. Overall, we evolved ANNs that were able to find 50-70% of the mines most of the time.
-![Logo](http://i1376.photobucket.com/albums/ah36/blueD2/classflow_zpsusf1galg.png)
+![Logo](Minesweeper-AI/minesweeper-results.png)
 
 ## References
 We adapted our Minesweeper game from here: https://gist.github.com/mohd-akram/3057736
